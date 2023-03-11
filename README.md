@@ -5,17 +5,25 @@
 ## Image Classification
 
 #### Dataset   
-![돌상고](https://user-images.githubusercontent.com/104747868/224483448-880732f0-bbe5-40de-9317-0a134e3498da.jpg)
 + Object Class : 3 (Dolphin, shark, whale)   
 + total : 1312 images   
 + trainset : 70%   
 + validset : 20%   
 + testset : 10%   
+![돌상고](https://user-images.githubusercontent.com/104747868/224483448-880732f0-bbe5-40de-9317-0a134e3498da.jpg)
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### [VGGNet](https://arxiv.org/pdf/1409.1556.pdf)(2014)   
+
++ Model   
+Using ```tensorflow.keras``` , I made the vgg19 model myself and brought the prepared dataset to learn(train).
+
++ Fine Tuning   
+In the original VGG19 model FC layer, it was changed to **3(n_classes) instead of 1000** in the Softmax stage.   
+
 ![0312011037308459](https://user-images.githubusercontent.com/104747868/224495143-30c14185-0a50-4453-b031-03be02aafb69.jpg)   
+
 + Results of an Experiment   
 > Epochs : **100**   
 > best epoch point : **68 epoch**   
@@ -24,11 +32,14 @@
 [colab code](https://github.com/WestChaeVI/CNN-models/blob/main/models/VGGnet(72_6%25).ipynb)
 ![image](https://user-images.githubusercontent.com/104747868/224492827-2ec7913c-7eb0-4da5-b125-83ef8dd4916d.png)
 
+
 ### **GoogLeNet(2014)**
 [paper](https://arxiv.org/pdf/1409.4842.pdf)
 
+
 ### **ResNet(2015)**
 [paper](https://arxiv.org/pdf/1512.03385.pdf)
+
 
 ### **SENet(2017)**
 [paper](https://arxiv.org/pdf/1709.01507.pdf)
