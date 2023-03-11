@@ -4,6 +4,15 @@
 
 ## Image Classification
 
++ Dataset   
+![돌상고](https://user-images.githubusercontent.com/104747868/224483448-880732f0-bbe5-40de-9317-0a134e3498da.jpg)
+> Object Class : 3 (Dolphin, shark, whale)   
+> total : 1312 images   
+> trainset : 70%   
+> validset : 20%   
+> testset : 10%   
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### **VGGNet(2014)**
 [paper](https://arxiv.org/pdf/1409.1556.pdf)
