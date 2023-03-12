@@ -28,7 +28,8 @@ In the original VGG19 model FC layer, it was changed to **3(n_classes) instead o
 > Epochs : **100**   
 > best epoch point : **68 epoch**   
 > best epoch accuracy : **72.6 %**   
-> 
+
+The Vgg19 model is obviously a great model, but the architecture of VggNet seems to have not been effectively applied to the datasets I prepared because it was based on a large dataset.
 [colab code](https://github.com/WestChaeVI/CNN-models/blob/main/models/VGGnet(72_6%25).ipynb)
 ![image](https://user-images.githubusercontent.com/104747868/224492827-2ec7913c-7eb0-4da5-b125-83ef8dd4916d.png)
 
