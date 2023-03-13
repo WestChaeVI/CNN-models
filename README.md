@@ -39,12 +39,13 @@ The Vgg19 model is obviously a great model, but the architecture of VggNet seems
 
 
 + Model   
-Using ```torchvision.models``` , I made the GoogLeNet model and Inception Architecture myself and brought the prepared dataset to learn(train).
+I made the GoogLeNet model and Inception Architecture myself.    
+I used ```torchvision.models``` to bring up the model, and trained it with the data set I had prepared.
 
 + Fine Tuning   
 In the original GoogLeNet model FC layer, it was changed to **3(n_classes) instead of 1000** in the Softmax stage.   
 
-  
+![googlenet](https://user-images.githubusercontent.com/104747868/224735511-62674d01-c083-4233-9414-29c41c644a7c.jpg)
 
 + Results of an Experiment   
 > Epochs : **100**   
