@@ -38,6 +38,23 @@ The Vgg19 model is obviously a great model, but the architecture of VggNet seems
 ### **GoogLeNet(2014)**
 [paper](https://arxiv.org/pdf/1409.4842.pdf)
 
++ Model   
+Using ```torchvision.models``` , I made the GoogLeNet model and Inception Architecture myself and brought the prepared dataset to learn(train).
+
++ Fine Tuning   
+In the original GoogLeNet model FC layer, it was changed to **3(n_classes) instead of 1000** in the Softmax stage.   
+
+![0312011037308459](https://user-images.githubusercontent.com/104747868/224495143-30c14185-0a50-4453-b031-03be02aafb69.jpg)   
+
++ Results of an Experiment   
+> Epochs : **100**   
+> best epoch point : **84 epoch**   
+> best epoch accuracy : **91.5 %**   
+
+GoogleNet certainly seems to have shown good performance in Accuracy and Loss, unlike VggNet.   
+
+[colab code](https://github.com/WestChaeVI/CNN-models/blob/main/models/GoogLeNet(91.5%25).ipynb)
+
 
 ### **ResNet(2015)**
 [paper](https://arxiv.org/pdf/1512.03385.pdf)
