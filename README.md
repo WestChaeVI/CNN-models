@@ -34,9 +34,9 @@ The Vgg19 model is obviously a great model, but the architecture of VggNet seems
 [colab code](https://github.com/WestChaeVI/CNN-models/blob/main/models/VGGnet(72_6%25).ipynb)
 ![image](https://user-images.githubusercontent.com/104747868/224492827-2ec7913c-7eb0-4da5-b125-83ef8dd4916d.png)
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### [**GoogLeNet**](https://arxiv.org/pdf/1409.4842.pdf)(2014)
-
 
 + Model   
 I made the GoogLeNet model and Inception Architecture myself.    
@@ -57,10 +57,30 @@ GoogleNet certainly seems to have shown good performance in Accuracy and Loss, u
 [colab code](https://github.com/WestChaeVI/CNN-models/blob/main/models/GoogLeNet(91.5%25).ipynb)
 ![image](https://user-images.githubusercontent.com/104747868/224642095-5c895151-2318-496b-a75e-0cf012168909.png)
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-### **ResNet(2015)**
-[paper](https://arxiv.org/pdf/1512.03385.pdf)
+## [**ResNet**](https://arxiv.org/pdf/1512.03385.pdf)(2015)
 
++ Model   
+I made the ResNet50 model and BottleNeck Architecture myself by using ```nn.Module```.    
+I used ```torchvision.models``` to bring up the model, and trained it with the data set I had prepared.
+
++ Fine Tuning   
+In the original ResNet model FC layer, it was changed to **3(n_classes) instead of 1000** in the Softmax stage.   
+
+![resnet](https://user-images.githubusercontent.com/104747868/224752873-3bc238ef-20d8-42b4-9c75-8feedaa7bc1f.jpg)
+
++ Results of an Experiment   
+> Epochs : **100**   
+> best epoch point : **84 epoch**   
+> best epoch accuracy : **91.5 %**   
+
+In the case of the Resnet50 model, it showed good performance similar to GoogLeNet.   
+
+[colab code](https://github.com/WestChaeVI/CNN-models/blob/main/models/GoogLeNet(91.5%25).ipynb)
+![image](https://user-images.githubusercontent.com/104747868/224642095-5c895151-2318-496b-a75e-0cf012168909.png)
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### **SENet(2017)**
 [paper](https://arxiv.org/pdf/1709.01507.pdf)
@@ -73,14 +93,22 @@ GoogleNet certainly seems to have shown good performance in Accuracy and Loss, u
 ### **FCN(2015)**
 [paper](https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Long_Fully_Convolutional_Networks_2015_CVPR_paper.pdf)
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ### **U-Net(2015)**
 [paper](https://arxiv.org/pdf/1505.04597.pdf)
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### **MobileNet(2017)**
 [paper](https://arxiv.org/pdf/1704.04861.pdf)
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ### **PSPNet(2017)**
 [paper](https://arxiv.org/pdf/1612.01105.pdf)
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### **DeepLabV3(2018)**
 [paper](https://arxiv.org/pdf/1802.02611.pdf)
