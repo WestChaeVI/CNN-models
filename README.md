@@ -35,8 +35,8 @@ The Vgg19 model is obviously a great model, but the architecture of VggNet seems
 ![image](https://user-images.githubusercontent.com/104747868/224492827-2ec7913c-7eb0-4da5-b125-83ef8dd4916d.png)
 
 
-### **GoogLeNet(2014)**
-[paper](https://arxiv.org/pdf/1409.4842.pdf)
+### [**GoogLeNet(2014)**](https://arxiv.org/pdf/1409.4842.pdf)
+
 
 + Model   
 Using ```torchvision.models``` , I made the GoogLeNet model and Inception Architecture myself and brought the prepared dataset to learn(train).
