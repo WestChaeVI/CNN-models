@@ -44,7 +44,7 @@ Using ```torchvision.models``` , I made the GoogLeNet model and Inception Archit
 + Fine Tuning   
 In the original GoogLeNet model FC layer, it was changed to **3(n_classes) instead of 1000** in the Softmax stage.   
 
-![0312011037308459](https://user-images.githubusercontent.com/104747868/224495143-30c14185-0a50-4453-b031-03be02aafb69.jpg)   
+  
 
 + Results of an Experiment   
 > Epochs : **100**   
@@ -54,6 +54,7 @@ In the original GoogLeNet model FC layer, it was changed to **3(n_classes) inste
 GoogleNet certainly seems to have shown good performance in Accuracy and Loss, unlike VggNet.   
 
 [colab code](https://github.com/WestChaeVI/CNN-models/blob/main/models/GoogLeNet(91.5%25).ipynb)
+![image](https://user-images.githubusercontent.com/104747868/224642095-5c895151-2318-496b-a75e-0cf012168909.png)
 
 
 ### **ResNet(2015)**
