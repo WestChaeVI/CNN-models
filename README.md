@@ -72,13 +72,13 @@ In the original ResNet model FC layer, it was changed to **3(n_classes) instead 
 
 + Results of an Experiment   
 > Epochs : **100**   
-> best epoch point : **84 epoch**   
-> best epoch accuracy : **91.5 %**   
+> best epoch point : **60 epoch**   
+> best epoch accuracy : **91.04 %**   
 
 In the case of the Resnet50 model, it showed good performance similar to GoogLeNet.   
 
-[colab code](https://github.com/WestChaeVI/CNN-models/blob/main/models/GoogLeNet(91.5%25).ipynb)
-![image](https://user-images.githubusercontent.com/104747868/224642095-5c895151-2318-496b-a75e-0cf012168909.png)
+[colab code](https://github.com/WestChaeVI/CNN-models/blob/main/models/ResNet50(91.04%25).ipynb)
+![image](https://user-images.githubusercontent.com/104747868/224768444-901c1f0c-a616-46ab-bebc-c9215938a3da.png)
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
