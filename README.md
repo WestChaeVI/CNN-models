@@ -90,6 +90,26 @@ In the case of the Resnet50 model, it showed good performance similar to GoogLeN
 
 ### [**DenseNet**](https://arxiv.org/pdf/1608.06993.pdf)(2017)
 
++ Model   
+I made the DenseNet model and transition block myself by using ```nn.Module```.    
+Then, I trained the model on a dataset that I prepared myself.   
+
++ Fine Tuning   
+In the original DenseNet model FC layer, it was changed to **3(n_classes) instead of 1000** in the Softmax stage.   
+
+![densenet](https://user-images.githubusercontent.com/104747868/225063696-51d93874-8d08-4df7-b4cb-bd38ce763c92.jpg)
+
++ Results of an Experiment   
+> Epochs : **200**   
+> best epoch point : **131 epoch**   
+> best epoch accuracy : **64.45 %**   
+
+On the first attempt, I trained with **'growth_rate : 12, epochs : 100, and batch : 8'**, but even trainset did not seem to learn properly, so I reset it to **'growth_rate : 24, epochs : 200, and batch : 32'**.   
+
+As I implemented the model myself, it was based on the **Imagenet dataset**, so I changed the Architecture to fit my dataset as much as I could, but I don't think the performance came out as much as I wanted.
+
+[colab code](https://github.com/WestChaeVI/CNN-models/blob/main/models/DenseNet(64.45%25).ipynb)
+![image](https://user-images.githubusercontent.com/104747868/225065009-371225b4-28a6-4f48-8b6b-1178a890c867.png)
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
